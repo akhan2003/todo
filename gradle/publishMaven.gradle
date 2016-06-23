@@ -26,8 +26,8 @@ publishing {
             url artifactoryReleaseRepoUrl
 
             credentials {
-                username = "${artifactory_user}"                               
-                password = "${artifactory_password}"
+                username = 'admin'                               
+                password = 'password'
             }
         }   
     }
