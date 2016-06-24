@@ -9,7 +9,7 @@ configurations {
 }
 
 dependencies {
-    todo group: project.group, name: project.name, version: project.version.toString(), ext: 'war'
+    todo group: project.group, name: 'todo-' + project.name, version: project.version.toString(), ext: 'war'
 }
 
 ext.downloadDir = file("$buildDir/download/artifacts")
