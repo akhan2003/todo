@@ -29,6 +29,9 @@ subprojects {
     test {
         reports.junitXml.destination = file("$reports.junitXml.destination/unit")
     }
+    
+    ext.configDir = new File(rootDir, 'config')
+    apply from: "$rootDir/gradle/pmd.gradle"
 
     sonarRunner {
         sonarProperties {
