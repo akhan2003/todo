@@ -1,0 +1,18 @@
+apply plugin: 'checkstyle'
+
+ext.checkstyleConfigDir = "$configDir/checkstyle"
+
+
+checkstyle {
+    configFile = new File(checkstyleConfigDir, 'checkstyle.xml')
+    ignoreFailures = true
+    showViolations = false
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        xml.enabled true
+        html.enabled false
+        
+    }
+}
