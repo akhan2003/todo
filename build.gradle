@@ -32,6 +32,10 @@ subprojects {
     
     ext.configDir = new File(rootDir, 'config')
     apply from: "$rootDir/gradle/pmd.gradle"
+    
+    ext.configDir = new File(rootDir, 'config')
+    apply from: "$rootDir/gradle/checkstyle.gradle"
+    
 
     sonarRunner {
         sonarProperties {
