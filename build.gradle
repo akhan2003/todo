@@ -22,7 +22,7 @@ subprojects {
     apply plugin: 'java'
     apply from: "$rootDir/gradle/jacoco.gradle"
     
-    ext.compatibilityVersion = '1.6'
+    ext.compatibilityVersion = '1.8'
     sourceCompatibility = compatibilityVersion
     targetCompatibility = compatibilityVersion
 
@@ -45,5 +45,5 @@ subprojects {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.11'
+    gradleVersion = '2.13'
 }
